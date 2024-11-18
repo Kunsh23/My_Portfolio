@@ -20,10 +20,10 @@ const RecentProjects = () => {
             className="sm:h-[39rem] lg:min-h-[26.5rem] h-[32rem] flex items-center justify-center sm:w-[570px] w-[80vw] "
             key={item.id}
           >
-            <PinContainer title="Project" href="https://twitter.com/mannupaaji">
+            <PinContainer title={item.name}>
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] md:h-[40vw] h-[30vh] lg:h-[45vh] mb-10">
                 <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-2xl"
+                  className="relative w-full h-full overflow-hidden lg:rounded-2xl min-h-fit"
                   style={{ backgroundColor: "#13162D" }}
                 >
                   <img src="/bg.png" alt="bgimg" />
@@ -31,7 +31,7 @@ const RecentProjects = () => {
                 <img
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0"
+                  className="z-10 absolute bottom-0 w-[90%] rounded-lg"
                 />
               </div>
 
@@ -40,7 +40,7 @@ const RecentProjects = () => {
               </h1>
 
               <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+                className="lg:text-lg lg:font-normal font-light text-sm line-clamp-2"
                 style={{
                   color: "#BEC1DD",
                   margin: "1vh 0",
@@ -65,9 +65,11 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
-                  </p>
+                  <a href={item.link} target="_blank">
+                    <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                      {item.type}
+                    </p>
+                  </a>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
               </div>

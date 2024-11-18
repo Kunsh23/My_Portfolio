@@ -15,7 +15,7 @@ export const FloatingNav = ({
   navItems: {
     name: string;
     link: string;
-    icon?: React.ElementType; // Use ElementType for React components
+    icon?: React.ElementType;
   }[];
   className?: string;
 }) => {
@@ -63,7 +63,7 @@ export const FloatingNav = ({
               <span className="sm:block md:hidden lg:hidden text-[24px]">
                 {Icon && <Icon />}
               </span>
-              <span className="hidden sm:block text-sm md:display !cursor-pointer">
+              <span className="hidden sm:block sm:text-sm md:text-md lg:text-lg md:display !cursor-pointer">
                 {navItem.name}
               </span>
             </Link>

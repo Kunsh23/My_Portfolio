@@ -2,12 +2,6 @@ import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
 const nextConfig = {};
 
-module.exports = {
-  output: "export",
-  basePath: "/My-Portfolio",
-};
-
-
 export default withSentryConfig(nextConfig, {
 // For all available options, see:
 // https://github.com/getsentry/sentry-webpack-plugin#options
