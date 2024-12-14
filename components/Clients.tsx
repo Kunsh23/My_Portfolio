@@ -34,7 +34,7 @@ const Clients = () => {
                   alt={company.name}
                   className="md:w-10 w-5"
                 />
-                <p className="text-white text-md md:text-lg lg:text-xl mt-2">
+                <p className="text-white text-md md:text-lg lg:text-xl">
                   {company.name}
                 </p>
                 {/* <img
