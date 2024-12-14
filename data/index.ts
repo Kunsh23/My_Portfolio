@@ -155,7 +155,7 @@ export const testimonials = [
       "I can definitely tell it was great working with Kunsh. He does have the habit of putting thoughts into the idea. At several occasions we just gave him the idea about the functionality of the screen and he took his time to design screens that matched with the current UI, yet was innovative. He did put great effort in trying to match the desired functionality of the screens correctly. I trust he has got a great future ahead of him. All the best.",
     name: "Nishant Kapoor",
     title: "Manager - Customer Success at RARR Technologies",
-    image: "/nishant_sir_pic.png",
+    image: "/nishantsirpic.svg",
   },
   // {
   //   quote:
