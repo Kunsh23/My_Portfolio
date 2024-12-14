@@ -28,7 +28,7 @@ const Clients = () => {
         <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10">
           {companies.map((company) => (
             <React.Fragment key={company.id}>
-              <div className="flex md:max-w-80 max-w-52 gap-2">
+              <div className="flex md:max-w-full max-w-full gap-2">
                 <img
                   src={company.img}
                   alt={company.name}
