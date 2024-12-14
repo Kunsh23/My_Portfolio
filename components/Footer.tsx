@@ -28,7 +28,7 @@ const Footer = () => {
           Copyright © 2024 Kunsh Suneja
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6 mt-2">
+        <div className="flex items-center md:gap-3 gap-6 mt-5">
           {socialMedia.map((info) => (
             <div
               key={info.id}
